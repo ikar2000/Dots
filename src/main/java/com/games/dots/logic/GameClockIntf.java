@@ -1,10 +1,15 @@
 package com.games.dots.logic;
 
+import com.games.dots.logic.handlers.GameExpiredHandler;
+import com.games.dots.logic.handlers.MoveExpiredHandler;
+
 public interface GameClockIntf {
 
-	void nextUser(String userId);
+	void switchUser(String userId, boolean hasBonus);
 	
-	void RegisterToMoveExpiredEvent(Object o);
+	void SubscribeToMoveExpiredEvent(String GameId, MoveExpiredHandler handler);
+	void UnSubscribeToMoveExpiredEvent(String GameId);
 	
-	void RegisterToGameTimerExpiredEvent(Object o);
+	void SubscribeToGameTimerExpiredEvent(String GameId, GameExpiredHandler handler);
+	void UnSubscribeToGameTimerExpiredEvent(String GameId);
 }
