@@ -66,7 +66,7 @@ public class GameClock implements GameClockIntf {
 	}
 	
 	
-	public void GameEnded() {
+	public void Close() {
 		// reset counter if previous move ended preliminary
 		if (gameTimer != null) {
 			gameTimer.cancel();
@@ -100,7 +100,7 @@ public class GameClock implements GameClockIntf {
 	        public void run() {    
 	        	
 	        	//Game Ended
-	        	for (GameExpiredHandler handler : GameExpiredMailingList.values()) {
+	        	for (MoveExpiredHandler handler : MoveExpiredMailingList.values()) {
 	        		
 					 handler.handleEvent(new MoveExpiredHandlerEventArgs(moveOwnerUserId));
 				}

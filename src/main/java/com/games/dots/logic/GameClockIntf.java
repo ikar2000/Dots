@@ -12,4 +12,6 @@ public interface GameClockIntf {
 	
 	void SubscribeToGameTimerExpiredEvent(String GameId, GameExpiredHandler handler);
 	void UnSubscribeToGameTimerExpiredEvent(String GameId);
+	
+	void Close();
 }
