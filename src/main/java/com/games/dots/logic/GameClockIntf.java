@@ -1,7 +1,7 @@
 package com.games.dots.logic;
 
-import com.games.dots.logic.handlers.GameExpiredHandler;
-import com.games.dots.logic.handlers.MoveExpiredHandler;
+import com.games.dots.logic.eventhandlers.GameExpiredHandler;
+import com.games.dots.logic.eventhandlers.MoveExpiredHandler;
 
 public interface GameClockIntf {
 
