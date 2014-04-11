@@ -14,7 +14,7 @@ public class GameClockFactory {
 	 * @param bonusPeriod - bonus for appropriate move
 	 * @return
 	 */
-	public static GameClockIntf createGameClock(List<String> UserIds, Period gamePeriod, Period movePeriod, Period bonusPeriod)
+	public static IGameClock createGameClock(List<String> UserIds, Period gamePeriod, Period movePeriod, Period bonusPeriod)
 	{
 		//TODO: all periods might have default values
 		

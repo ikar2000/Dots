@@ -45,7 +45,7 @@ public class GameClockTests {
 		Period movePeriod = new Period().withMillis(100);
 		Period bonusPeriod = new Period().withMillis(100);
 		
-		GameClockIntf clock =  GameClockFactory.createGameClock(userIds, gamePeriod, movePeriod, bonusPeriod);
+		IGameClock clock =  GameClockFactory.createGameClock(userIds, gamePeriod, movePeriod, bonusPeriod);
 		
 		
 		
@@ -81,7 +81,7 @@ public class GameClockTests {
 		Period movePeriod = new Period().withMillis(100);
 		Period bonusPeriod = new Period().withMillis(100);
 		
-		GameClockIntf clock =  GameClockFactory.createGameClock(userIds, gamePeriod, movePeriod, bonusPeriod);
+		IGameClock clock =  GameClockFactory.createGameClock(userIds, gamePeriod, movePeriod, bonusPeriod);
 		
 		
 		//Game Expired Handler

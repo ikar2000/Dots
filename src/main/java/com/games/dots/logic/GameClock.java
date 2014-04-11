@@ -12,7 +12,7 @@ import com.games.dots.logic.eventhandlers.GameExpiredHandler;
 import com.games.dots.logic.eventhandlers.MoveExpiredHandler;
 import com.games.dots.logic.eventhandlers.MoveExpiredHandlerEventArgs;
 
-public class GameClock implements GameClockIntf {
+public class GameClock implements IGameClock {
 
 	Map<String, MoveExpiredHandler> MoveExpiredMailingList = new HashMap<>();
 	Map<String, GameExpiredHandler> GameExpiredMailingList = new HashMap<>();

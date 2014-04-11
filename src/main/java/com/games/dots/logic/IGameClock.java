@@ -3,7 +3,7 @@ package com.games.dots.logic;
 import com.games.dots.logic.eventhandlers.GameExpiredHandler;
 import com.games.dots.logic.eventhandlers.MoveExpiredHandler;
 
-public interface GameClockIntf {
+public interface IGameClock {
 
 	void switchUser(String userId, boolean hasBonus);
 	
