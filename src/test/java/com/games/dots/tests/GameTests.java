@@ -82,6 +82,11 @@ public class GameTests {
 	}
 	
 	@Test
+	public void DummyTest(){
+	
+	}
+	
+	@Test
 	public void BigCycleTest(){
 		//Arrange
 		
